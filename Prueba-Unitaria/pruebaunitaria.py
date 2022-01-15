@@ -1,10 +1,14 @@
 from Funcion import Nota_estudiante
-import unittest
 
-class practica (unittest.TestCase):
+x = input("Ingrese la nota del estudiante: ")
+notafinal = Nota_estudiante(x)
 
-    def Test_conseguir_nota(self):
-        self.assertEqual(Nota_estudiante(75), "O")
-        self.assertEqual(Nota_estudiante("Rodrigo Reyes"), False)
-        self.assertEqual(Nota_estudiante(420), False)
-        self.assertEqual(Nota_estudiante(-12), False)
+if x == "10" and notafinal == "D":
+
+    print("la nota del estudiante es: ", x)
+    print("Por lo que se le asignara: ", notafinal)
+
+    print ("Programa ejecutado exitosamente")
+else:
+    print("error del programa")
+
